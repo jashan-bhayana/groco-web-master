@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="styleforpaymentform.css">
+</head>
+<body>
+    <div class="container">
+
+    <form action="">
+        <div class="payment-form"><h1> ||---Payment Form---|| </h1></div>
+        <p>Required fields are marked as *</p>
+        <hr><h1>User Information:</h1></hr>
+        <h2>*CONTACT INFO:--</h2>
+        <fieldset>
+        <p>Name: *<input type="text" name="name" required placeholder="Jashan"></p>
+     <p>*Address:<textarea name="address" id="address" rows="5" cols="100" required placeholder="enter your address"></textarea></p>
+        <p>*Email: <input type="email" name="email"id="email" required placeholder="xyz123@gmail.com"></p>
+            <p>*Pincode: <input type="number" id="Pincode" id="pincode" required placeholder="123456"></p>
+            <h2>*PERSONAL INFO:--</h2>
+            <fieldset>  
+                <legend>*Gender</legend> 
+            <p>  Male <input type="radio" name="gender" id="male" required>    </p>
+            <p>
+                 
+                Female <input type="radio" name="gender" required placeholder=".">
+            <p>Age:
+                <input type="number" name="number" required placeholder="enter your age">
+
+            </p>
+        <p>Mobile no:<input type="number" name="number" required placeholder="9000000009">            
+        </p></fieldset>
+            <h2>*PAYMENT INFO:--</h2>
+             <fieldset><p>
+                <h4>Card Type:</h4>
+                <select name="card_type" id="card_type">
+                    <option value="">--Select a Card Type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="MasterCard">MasterCard</option>
+
+                </select>
+                <p>
+                    *Card number <input type="number" name="card number" id="card number" placeholder="1111-2222-3333-4444">
+
+                </p>
+                <p>
+                    *Expiry Date <input type="date" name="exp_date" id="exp_date">
+                </p>
+                <p>
+                    *CVV <input type="password" name="CVV" id="CVV" placeholder="****">
+                </p>
+            </p>
+            <p>
+                <h4>UPI:</h4>
+                <select name="UPI id" id="UPI id">
+                    <option value="">--Select your UPI id--</option>
+                    <option value="Gpay">Gpay</option>
+                    <option value="PhonePe">PhonePe</option>
+                    <option value="Apple Pay">Apple Pay</option>
+                    <option value="Paytm">Paytm</option>
+                </select>
+
+
+            </p>
+            <p>
+                Enter UPI id:<input type="email">
+            </p></fieldset>
+            <p><input type="Submit" value="PAY NOW"></p>
+        </div>
+            
+
+        </form>
+    
+    
+</body>
+</html>
